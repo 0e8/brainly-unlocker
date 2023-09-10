@@ -1,0 +1,30 @@
+{
+    "name": "Brainly Unlocker",
+    "description": "Unlock unlimited Brainly answers.",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "permissions": [
+        "tabs"
+    ],
+    "action": {
+        "default_popup": "index.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+            "https://brainly.pl/*",
+            "https://znanija.com/*",
+            "https://brainly.lat/*",
+            "https://brainly.com.br/*",
+            "https://nosdevoirs.fr/*",
+            "https://eodev.com/*",
+            "https://brainly.ro/*",
+            "https://brainly.co.id/*",
+            "https://brainly.in/*",
+            "https://brainly.ph/*",
+            "https://brainly.com/*"
+            ],
+            "js": ["scripts/app.js"]
+        }
+    ]
+}
