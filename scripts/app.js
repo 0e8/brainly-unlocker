@@ -2,7 +2,7 @@
 var cookie = localStorage.getItem("flexible-funnel-last-access-data");
 var cookieJSON = JSON.parse(cookie);
 
-// Catching error when user isnt on question page or is on unanswered question page
+// Catch error when user isnt on question page or is on unanswered question page
 try {
     // If the answer is not granted, remove cookie and reload the page
     if (cookieJSON["status"] != "granted") {
