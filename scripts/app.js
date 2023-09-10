@@ -1,4 +1,4 @@
-// Get cookie and as JSON
+// Get cookie and parse JSON
 var cookie = localStorage.getItem("flexible-funnel-last-access-data");
 var cookieJSON = JSON.parse(cookie);
 
